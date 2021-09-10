@@ -1,0 +1,733 @@
+@media (min-width: 1100px){
+    div[class="welcomeContent"] h1 {
+        font-size: 67.2px;
+    }
+
+    div[class="welcomeContent"] p {
+        font-size: 40.48px;
+    }
+
+    div[class="welcomeContent"] h2 {
+        font-size: 40px;
+    }
+
+    div[class="welcomeContent"] p:last-of-type {
+        font-size: 16px;
+    }
+
+    div[class="chooseACarContent"] h2 {
+        font-size: 40px;
+    }
+
+    div[class="chooseACarContent"] p {
+        font-size: 18.24px;
+    }
+
+    form[class="findACarContentForm"] {
+        width: 545px;
+    }
+
+    form[class="findACarContentForm"] > h2 {
+        font-size: 30.4px;
+    }
+
+    form[class="findACarContentForm"] select {
+        font-size: 17.6px;
+    }
+
+    div[class="findACarContentFormSearch"] > input {
+        font-size: 17.6px;
+    }
+
+    div[class="findACarContentFormSubmit"]> input {
+        font-size: 17.6px;
+    }
+
+    div[class="ourAdvantagesContent ourAdvantagesContent1"] h2 {
+        font-size: 44.8px;
+    }
+
+    div[class="ourAdvantagesContent"] p {
+        font-size: 16px;
+        line-height: 25.2px;
+    }
+
+    div[class="feedBackContent"] > h2 {
+        font-size: 45.28px;
+    }
+
+    img[class="feedBackContentWrapperPhoto"] {
+        width: 200px;
+    }
+
+    div[class="feedBackContentWrapperParallelogram"] > h4 {
+        font-size: 17.6px;
+    }
+
+    div[class="feedBackContentWrapperParallelogram"] > p:first-of-type {
+        font-size: 17.6px;
+    }
+
+    div[class="feedBackContentWrapperParallelogram"] > p + p {
+        font-size: 19.2px;
+    }
+
+    .feedBackContentWrapperParallelogramQuotation_marks > img[src="images/te1.png"] {
+        width: 43px;
+    }
+
+    div[class="contactsContent"] > h2 {
+        font-size: 41.6px;
+    }
+
+    div[class="contactsContent"] > p:first-of-type {
+        font-size: 50.08px;
+    }
+
+    div[class="contactsContent"] > p:last-of-type {
+        font-size: 40.48px;
+    }
+
+    div[class="footerContent"] > p {
+        font-size: 17.92px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome .welcomeContent p:last-of-type {
+        padding-top: 0.7em;
+    }
+
+    nav[class="navigation"] {
+        min-height: 93px;
+    }
+
+    div[class="findACarContentFormSearch"] > input {
+        width: 95.2%;
+        height: 2.3em;
+    }
+
+    form[class="findACarContentForm"] {
+        min-height: 520px;
+        padding: 2em 1.5em 2em 1.5em;
+    }
+
+    form[class="findACarContentForm"] select {
+        height: 2.3em;
+    }
+
+    div[class="ourAdvantagesContent ourAdvantagesContent1"] p:first-of-type {
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+
+    #ourAdvantages .ourAdvantagesContentPoint {
+        height: 60px;
+        width: 60px;
+        font-size: 0.9em;
+        line-height: 60px;
+    }
+
+    section[class="contacts"] {
+        min-height: 270px;
+    }
+}
+
+@media (max-width: 420px) {
+    div[class="welcomeContent"] h1 {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+
+    .chooseACarContentFlex {
+        padding: 0vw 3vw 0vw 3vw;
+    }
+
+    form[class="findACarContentForm"] {
+        min-height: 400px;
+    }
+
+    div[class="ourAdvantagesContent ourAdvantagesContent1"] p:first-of-type {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+
+    #ourAdvantages .ourAdvantagesContentPoint {
+        height: 50px;
+        width: 50px;
+        font-size: 0.9em;
+        border: #F7D600 5px solid;
+        line-height: 50px;
+    }
+
+    div[class="feedBackContentWrapperParallelogram"] > p + p {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    section[class="contacts"] {
+        min-height: 270px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    min-height: 83px;
+    background-color: white; 
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+
+.headerContent {
+    margin: auto;
+    max-width: 1315px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.logo {
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-position: 17.51% 50%;
+    min-height: 83px;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.navigation {
+    min-height: 83px;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 83px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation li {
+    margin-top: 5px;
+}
+
+.navigation ul a {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    padding: 0.3em 1.4em;
+    margin-left: 0.3em;
+    white-space: nowrap;
+    transition: 100ms;
+}
+
+.navigation ul a.signIn {
+    text-transform: none;
+}
+
+.navigation ul a:hover {
+    background-color: #f7d700;
+    border-radius: 50px;
+    transition: 500ms;
+}
+
+.navigation ul a:active {
+    color: rgb(126, 0, 0);
+    border-radius: 50px;
+}
+
+.welcome {
+    background-color: #060606;
+    font-family: 'Righteous', cursive;
+    color: white;
+    min-height: 708px;
+    text-align: center;
+}
+
+.welcomeContent {
+    background-position: top;
+    margin: auto;
+    max-width: 1315px;
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    min-height: 708px;
+    background-size: auto;
+}
+
+.welcomeContent h1 {
+    font-size: calc(4.92vw + 13.05px);   /* Fmax=67.2px - Fmin=28.8px */
+    padding-top: 1.78em;
+}
+
+.welcomeContent p {
+    font-size: calc(2.63vw + 11.6px);    /* Fmax=40.48px - Fmin=20px */
+    font-weight: 600;
+    margin-top: 0.9em;
+}
+
+.welcomeContent h2 {
+    color:#f7d600;
+    font-size: calc(2.62vw + 11.23px);   /* Fmax=40px - Fmin=19.6px */
+    padding-top: 0.3em;
+}
+
+.welcomeContent p:last-of-type {
+    color: white;
+    font-size: calc(0.26vw + 13.18px);   /* Fmax=16px - Fmin=14px */
+    padding-top: 0.1em;
+    padding-bottom: 0.9em;
+    line-height: 1.7em;
+    font-weight: 100;
+    width: 70%;
+    margin: auto;
+}
+
+.welcomeContent div {
+    background-color: white;
+    margin: auto;
+    margin-top: 3.4em;
+    max-width: 12.1em;
+    font-size: 1em;
+    color: black;
+    transition: 100ms;
+}
+
+.welcomeContent div:hover {
+    background-color: #f7d600;
+    transition: 500ms;
+}
+
+.welcomeContent div a {
+    width: 100%;
+    height: 3.3em;
+    border: solid black 1px;
+    display: block;
+    line-height: 3.3em;
+    color: black;
+    font-weight: 600;
+}
+
+.welcomeContent div a:active {
+    color: rgb(126, 0, 0);
+}
+
+.chooseACar {
+    background-color: white;
+    min-height: 654px;
+}
+
+.chooseACarContent {
+    margin: auto;
+    max-width: 1315px;
+}
+
+.chooseACarContent h2 {
+    font-family: 'Righteous', cursive;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1.85em;
+    font-size: calc(2.62vw + 11.23px);   /* Fmax=40px - Fmin=19.6px */
+}
+
+.chooseACarContent p {
+    font-family: 'Righteous', cursive;
+    color: black;
+    text-align: center;
+    padding-top: 1.1em;
+    font-size: calc(0.48vw + 12.97px);   /* Fmax=18.24px - Fmin=14.5px */
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.chooseACarContentFlex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 24em;
+    max-width: 72em;
+    margin: auto;
+}
+
+.chooseACarContentFlex img {
+    margin-top: 4.1em;
+    width: 98%;
+    padding-bottom: 1em;
+}
+
+.chooseACarContentFlexName {
+    min-height: 2em;
+    background-color: #f7d600;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: black;
+    font-size: 1.46em;
+    padding-bottom: 1em;
+}
+
+.chooseACarContentFlexHundai {
+    position: relative;
+    max-width: 24em;
+}
+
+.chooseACarContentFlexAudi {
+    position: relative;
+    max-width: 24em;
+}
+
+.chooseACarContentFlexBmw {
+    position: relative;
+    max-width: 24em;
+}
+
+.findACar {
+    min-height: 898px;
+    background-color: #080808;
+}
+
+.findACarContent {
+    margin: auto;
+    max-width: 1315px;
+    background: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    min-height: 898px;
+    position: relative;
+    background-position: left bottom;
+}
+
+.findACarContentForm {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3.3em 3.2em 2.9em 2.6em;
+    position: absolute;
+    top: 6.4em;
+    right: 4.4vw;
+    width: calc(37.82vw + 128.97px);     /* Wmax=545px Wmin=250px */
+    min-height: 695px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 21.3% 18.3% 13.4% 17.9% 18.7% 10.4%;
+    grid-template-areas:
+        "header"
+        "chooseCM"
+        "chooseCT"
+        "search"
+        "price"
+        "button"
+    ;
+}
+
+.findACarContentForm > h2 {
+    grid-area: header;
+    min-height: 52px;
+    font-family: 'Righteous', cursive;
+    color: black;
+    text-align: center;
+    font-size: calc(1.46vw + 14.32px);   /* Fmax=30.4px Fmin=19px */
+}
+
+.findACarContentFormChCarMake {
+    grid-area: chooseCM;
+}
+
+.findACarContentFormChCarType {
+    grid-area: chooseCT;
+}
+
+.findACarContentFormSearch {
+    grid-area: search;
+}
+
+.findACarContentFormChPrice {
+    grid-area: price;
+}
+
+.findACarContentFormSubmit {
+    grid-area: button;
+    width: 45%;
+    height: 100%;
+    margin: auto;
+}
+
+.findACarContentForm select {
+    height: 3.1em;
+    width: 100%;
+    border: 1px solid #acacac;
+    font-family: 'Poppins';
+    font-size: calc(0.59vw + 11.11px);  /* Fmax=17.6px Fmin=13px */
+    padding-left: 0.8em;
+}
+
+.findACarContentFormSearch > input {
+    height: 3.1em;
+    width: 96.4%;
+    border: 1px solid #acacac;
+    font-family: 'Poppins';
+    font-size: calc(0.59vw + 11.11px);  /* Fmax=17.6px Fmin=13px */
+    padding-left: 0.8em;
+}
+
+.findACarContentFormSubmitButton {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-family: 'Righteous';
+    font-size: calc(0.59vw + 11.11px);  /* Fmax=17.6px Fmin=13px */
+}
+
+.findACarContentFormSubmitButton:hover {
+    background-color: #5c5c5c;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.ourAdvantages {
+    min-height: 963px;
+}
+
+.ourAdvantagesContent {
+    margin: auto;
+    max-width: 1315px;
+    min-height: 963;
+}
+
+.ourAdvantagesContent h2 {
+    font-family: 'Righteous', cursive;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 2.05em;
+    font-size: calc(3.05vw + 11.24px);    /* Fmax=44.8px Fmin=21px */
+}
+
+.ourAdvantagesContent p:first-of-type {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: calc(0.26vw + 13.18px);    /* Fmax=16px Fmin=14px */
+    margin: 14.3em;
+    margin-top: 1em;
+    margin-bottom: 3.8em;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    line-height: calc(0.54vw + 19.28px);  /* LHmax=25.2px LHmin=21px */
+}
+
+.ourAdvantagesContent p {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: calc(0.26vw + 13.18px);    /* Fmax=16px Fmin=14px */
+    margin-right: 4.3em;
+    margin-left: 4.3em;
+    margin-bottom: 2em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    line-height: calc(0.54vw + 19.28px);  /* LHmax=25.2px LHmin=21px */
+}
+
+.ourAdvantagesContentPoint {
+    height: 73px;
+    width: 73px;
+    background-color: #23272c;
+    border-radius: 49px;
+    border: #F7D600 6px solid;
+    margin: auto;
+    text-align: center;
+    color: white;
+    line-height: 73px;
+    font-family: 'Poppins';
+    font-size: 1em;
+}
+
+.ourAdvantagesContentPoint1 {
+    margin-bottom: 1.5em;
+}
+
+.ourAdvantagesContentPoint2 {
+    margin-top: 3.1em;
+    margin-bottom: 1.4em;
+}
+
+.ourAdvantagesContentPoint3 {
+    margin-top: 3.3em;
+    margin-bottom: 1.3em;
+}
+
+.feedBack {
+    min-height: 741px;
+    background-color: #23272c;
+}
+
+.feedBackContent {
+    margin: auto;
+    max-width: 1315px;
+    min-height: 742px;
+}
+
+.feedBackContent > h2 {
+    text-align: center;
+    font-size: calc(3.24vw + 9.63px);      /* Fmax=45.28px Fmin=20px */
+    font-weight: 600;
+    font-family: 'Righteous', cursive;
+    color: white;
+    padding-top: 1.3em;
+    text-transform: uppercase;
+}
+
+.feedBackContentWrapper {
+    max-width: 1315px;
+    min-height: 29.6em;
+    margin-top: 3.4em;
+    position: relative;
+}
+
+.feedBackContentWrapperPhoto {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: calc(8.33vw + 108.33px);       /* Wmax=200px Wmin=135px */
+    transform: translate(-50%);
+    z-index: 1;
+    margin-bottom: -3.2em;
+}
+
+.feedBackContentWrapperParallelogram {
+    clip-path: polygon(9.7% 0%, 100% 0, 90.2% 100%, 0% 100%);
+    max-width: 1117px;
+    min-height: 235px;
+    top: 151px;
+    background-color: white;
+    margin: auto;
+    padding-top: 65px;
+}
+
+.feedBackContentWrapperParallelogram > h4 {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: calc(0.59vw + 11.11px);    /* Fmax=17.6px Fmin=13px */
+    font-weight: 300;
+}
+
+.feedBackContentWrapperParallelogram > p:first-of-type {
+    color: #f7d600;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: calc(0.59vw + 11.11px);    /* Fmax=17.6px Fmin=13px */
+    font-weight: 300;
+}
+
+.feedBackContentWrapperParallelogram > p + p {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: calc(0.67vw + 11.87px);    /* Fmax=19.2px Fmin=147px */
+    font-style: italic;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.feedBackContentWrapperParallelogramQuotation_marks {
+    text-align: center;
+    padding-top: 21px;
+}
+
+img[src="images/te1.png"] {
+    width: calc(2.18vw + 23.03px);       /* Wmax=43px Wmin=30px */
+}
+
+.feedBackContentScrollButtons {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.feedBackContentScrollButtons > button {
+    width: 48px;
+    height: 15px;
+    background-color: #f7d600;
+    border-radius: 9px;
+}
+
+.feedBackContentScrollButtons > button:nth-child(2) {
+    width: 50px;
+    height: 15px;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.feedBackContentScrollButtons > button:hover {
+    background-color: #f7a900;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.contacts {
+    min-height: 310px;
+}
+
+.contactsContent {
+    margin: auto;
+    max-width: 1315px;
+}
+
+.contactsContent > h2 {
+    text-align: center;
+    font-size: calc(2.51vw + 13.96px);         /* Fmax=41.6px Fmin=22px */
+    font-weight: 600;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    padding-top: 1.45em;
+}
+
+.contactsContent > p:first-of-type {
+    text-align: center;
+    font-size: calc(3.22vw + 14.71px);         /* Fmax=50.08px Fmin=25px */
+    font-weight: 600;
+    font-family: 'Righteous', cursive;
+    padding-top: 0.1em;
+    color: #414141;
+}
+
+.contactsContent > p:last-of-type {
+    text-align: center;
+    font-size: calc(2.63vw + 12.08px);         /* Fmax=40.48px Fmin=20px */
+    font-weight: 600;
+    font-family: 'Righteous', cursive;
+    padding-top: 0.7em;
+    color: #414141;
+}
+
+.contactsContent > p > span {
+    color: #f7d600;
+}
+
+.footer {
+    min-height: 60px;
+    background-color: #23272c;
+}
+
+.feedBackContent {
+    margin: auto;
+    max-width: 1315px;
+}
+
+.footerContent > p {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: calc(0.41vw + 13.41px);              /* Fmax=17.92px Fmin=14.72px */
+    color: white;
+    padding-top: 1.1em;;
+}
